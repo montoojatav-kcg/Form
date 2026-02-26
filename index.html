@@ -1,82 +1,64 @@
+
 <!DOCTYPE html>
-<html leng="en"><head>
-        <meta charshet="UTF-8">
-        <title>montoo's From </title>
-    </head><c-toggler style="transform: translate(2px, 0px); display: none;"></c-toggler>
-    <body>
-        <h2>______________**APPOINTMENT FORM **____________</h2>
-        <hr>
-       <hr>
-       <hr>
-        <form action="http://localhost:8158/MONTOO.html">
-            <h1>       ✨✨CREATED BY MONTOO JATAV❣️❣️</h1>
-         
-            <h3>
-            <p></p><fieldset>
-                <legend>NAME</legend>
-                <input type="text"></fieldset>
-            <br><br>
-           
-            <fieldset>
-                <legend>SURNAME</legend>
-                <input type="text">
-                </fieldset>
-            
-            <br><br>
-            <fieldset>
-            <legend>CLASS</legend>
-              <br><br>
-              class:11th<input type="radio" name="class" id="">
-              <br><br>
-              class:12th<input type="radio" name="class" id="">
-                 <br><br>
-            </fieldset>
-            <br><br>
-            <fieldset>
-            <legend>GENDER</legend>
-            male: <input type="radio" name="gender" id="fx">
-            <br>
-             female: <input type="radio" name="gender" id="fx">
-             <br>
-             transgender: <input type="radio" name="gender" id="fx">                          
-             </fieldset>
-             
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Appointment Form</title>
+</head>
+<body>
+        <h1>       ✨✨CREATED BY MONTOO JATAV❣️❣️</h1>
+<h2>APPOINTMENT FORM</h2>
 
-            <p></p>
-            <fieldset>
-                <legend>ADDRESS:</legend>
-                 <textarea name="ADDRESS" id="" cols="100" rows="10"></textarea>
-                
-            </fieldset>
-            <fieldset>
-                <legend>PINCODE:</legend>
-                 <input type="text" id="PINCODE">
-            </fieldset>
-            <fieldset>
-                <legend>E-MAIL</legend>
-                <input type="email" name="E-MAIL" id="email">
-            </fieldset>
-           <fieldset>
-            <legend>AREA</legend>
-            RURAL: <input type="radio" name="AREA" id="MX">
-            <br>
-            URBAN: <input type="radio" name="AREA" id="MX">
-             <br>
-                              
-             </fieldset>
-            
-            </h3>
-            
-            
-            
-               <button type="submit" id="submit" class="submit-btn">SUBMIT</button>
+<form action="send.php" method="POST">
 
-                
-            
-        </form>
+<fieldset>
+<legend>Name</legend>
+<input type="text" name="name" required>
+</fieldset>
 
-    
-    
+<fieldset>
+<legend>Surname</legend>
+<input type="text" name="surname" required>
+</fieldset>
+
+<fieldset>
+<legend>Class</legend>
+11th <input type="radio" name="class" value="11th" required>
+12th <input type="radio" name="class" value="12th">
+</fieldset>
+
+<fieldset>
+<legend>Gender</legend>
+Male <input type="radio" name="gender" value="Male" required>
+Female <input type="radio" name="gender" value="Female">
+Transgender <input type="radio" name="gender" value="Transgender">
+</fieldset>
+
+<fieldset>
+<legend>Address</legend>
+<textarea name="address" required></textarea>
+</fieldset>
+
+<fieldset>
+<legend>Pincode</legend>
+<input type="text" name="pincode" required>
+</fieldset>
+
+<fieldset>
+<legend>Email</legend>
+<input type="email" name="email" required>
+</fieldset>
+
+<fieldset>
+<legend>Area</legend>
+Rural <input type="radio" name="area" value="Rural" required>
+Urban <input type="radio" name="area" value="Urban">
+</fieldset>
+
+<br>
+<button type="submit">SUBMIT</button>
+
+</form>
 
  </body>
      <style>
